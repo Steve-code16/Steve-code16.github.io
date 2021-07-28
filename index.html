@@ -79,7 +79,29 @@
                 <div class="whitespace"></div>
     
                 <div class="skills">
-                    
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">JAVASCRIPT</div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">GIT</div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">BOOTSTRAP</div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">FIGMA</div>
+                    </div>
                 </div>
     
                 <div class="whitespace"></div>
@@ -145,6 +167,19 @@
     </div>
     
         <!-- scripts -->
+
+        <script>
+            const menuBtn = document.getElementById("toggle");
+            const closeBtn = document.getElementById("resize");
+
+            menuBtn.addEventListener('click', () => {
+                closeBtn.classList.add("active");
+            });
+
+            closeBtn.addEventListener('click', () => {
+                closeBtn.classList.remove("active");
+            });
+        </script>
     
 </body>
 </html>
