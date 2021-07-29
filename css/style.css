@@ -49,17 +49,14 @@ img {
 
 /*---------------- navigation ----------------*/
 nav {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 5fr 5fr;
   width: 100%;
   height: 80px;
   background: var(--dark-clr);
   position: fixed;
   z-index: 2;
-}
-
-.flx-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 nav #logo {
@@ -78,11 +75,13 @@ nav #logo a:hover {
   color: var(--acc-clr);
 }
 
-nav .menu {
-  /* right: 80px; */
+nav #menu {
+  right: 80px;
+  position: fixed;
+  margin: 0;
 }
 
-nav .menu li {
+nav #menu li {
   padding-left: 42px;
   display: inline-block;
   cursor: pointer;
@@ -92,16 +91,16 @@ nav .menu li {
   transition: all 0.3s ease-out;
 }
 
-nav .menu li span {
+nav #menu li span {
   font-weight: 700;
 }
 
-nav .menu li a {
+nav #menu li a {
   padding: 8px;
   color: var(--light-clr);
 }
 
-nav .menu li a:hover {
+nav #menu li a:hover {
   color: var(--acc-clr);
 }
 
@@ -122,8 +121,8 @@ nav .menu li a:hover {
 
 .close-btn {
   position: absolute;
-  top: -2px;
-  right: 16px;
+  top: -4px;
+  right: 40px;
   font-weight: 300;
   z-index: 3;
   line-height: 80px;
@@ -185,11 +184,11 @@ nav .menu li a:hover {
     visibility: visible;
     opacity: 1;
     margin-top: 6px;
-    margin-right: 4px;
+    margin-right: 20px;
   }
 
   nav #logo {
-    margin-left: 24px;
+    /* margin-left: 24px; */
   }
 
   #menu a {
@@ -201,7 +200,7 @@ nav .menu li a:hover {
     font-weight: bolder;
   }
 
-  nav .menu {
+  nav #menu {
     display: none;
   }
 }
@@ -228,11 +227,22 @@ nav .menu li a:hover {
   /* padding-top: 50px; */
 }
 
+.section-subtitle {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  color: var(--dark-clr);
+  background: var(--acc-clr);
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
     margin: 0 auto;
-    grid-column-gap: 1em;
+    grid-column-gap: oem;
     grid-template-areas:
       "img title"
       "img subtitle";
@@ -241,37 +251,54 @@ nav .menu li a:hover {
 
   .section-img {
     grid-area: img;
-    min-width: 200px;
+    min-width: 250px;
     position: relative;
+    left: -25px;
     z-index: 1;
+  }
+
+  .section-title {
+    align-self: end;
   }
 
   .section-subtitle {
     align-self: start;
-    grid-column: -1/ 1;
+    grid-column: -4/ 1;
     grid-row: 2;
-    text-align: right;
+    /* text-align: right; */
     position: relative;
     left: -1.5em;
-    width: calc(100% + 1.5em);
+    width: calc(100% + 10em);
   }
 }
 
 @media (max-width: 767px) {
   .whitespace-1 {
     width: 100%;
-    height: 100px;
+    height: 50px;
   }
 
   .hero-container {
     height: 100%;
+  }
+
+  .section-title {
+    margin: 0;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin: 0em 0em 1em 0em;
+    padding: 0.4em 0.4em;
   }
 }
 
 .section-img {
   box-shadow: var(--bxsh);
   display: block;
-  max-width: 100%;
+  max-width: 80%;
+  border-radius: 10%;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -283,17 +310,8 @@ nav .menu li a:hover {
 .section-title strong {
   display: block;
   font-weight: bold;
-  font-size: 3.75rem;
-}
-
-.section-subtitle {
-  margin-bottom: 1em;
-  font-size: 1.75rem;
-  color: var(--dark-clr);
-  background: var(--acc-clr);
-  padding: 0.5em 1em;
-  text-transform: uppercase;
-  font-family: monospace;
+  font-size: 3rem;
+  padding: 0;
 }
 
 /*---------------- scroll down icon animation ----------------*/
@@ -342,6 +360,10 @@ section h6 {
   height: 80px;
   position: absolute;
   left: 50%;
+}
+
+section .skills {
+  display: grid;
 }
 
 /*---------------- footer section ----------------*/
