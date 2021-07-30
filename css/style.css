@@ -52,7 +52,7 @@ nav {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 5fr 5fr;
-  width: 100%;
+  width: 90%;
   height: 80px;
   background: var(--dark-clr);
   position: fixed;
@@ -107,13 +107,13 @@ nav #menu li a:hover {
 #toggle {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 0px;
   font-weight: 300;
   z-index: 3;
-  width: 30px;
+  /* width: 30px; */
   height: 30px;
   cursor: pointer;
-  float: right;
+  /* float: right; */
   transition: all 0.3s ease-out;
   visibility: hidden;
   opacity: 0;
@@ -122,7 +122,7 @@ nav #menu li a:hover {
 .close-btn {
   position: absolute;
   top: -4px;
-  right: 40px;
+  right: 0px;
   font-weight: 300;
   z-index: 3;
   line-height: 80px;
@@ -134,7 +134,7 @@ nav #menu li a:hover {
   top: 0;
   z-index: 2;
   background: var(--dark-clr);
-  width: 100%;
+  width: 90%;
   height: 100%;
   visibility: hidden;
   opacity: 0;
@@ -184,7 +184,7 @@ nav #menu li a:hover {
     visibility: visible;
     opacity: 1;
     margin-top: 6px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   nav #logo {
@@ -267,7 +267,7 @@ nav #menu li a:hover {
     grid-row: 2;
     /* text-align: right; */
     position: relative;
-    left: -1.5em;
+    left: -0.8em;
     width: calc(100% + 10em);
   }
 }
@@ -364,6 +364,36 @@ section h6 {
 
 section .skills {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+section img {
+  width: 50%;
+  margin: 0 auto 20px;
+}
+
+
+
+  @media (max-width: 767px) {
+    .whitespace {
+      display: block;
+    }
+    section .skills {
+      grid-template-columns: 1fr 1fr;
+      padding: 50px;
+    }
+
+    @media (max-width: 550px) {
+      .whitespace {
+        display: block;
+    }
+    section .skills {
+      grid-template-columns: 1fr;
+      padding: 100px;
+  }
 }
 
 /*---------------- footer section ----------------*/
