@@ -520,6 +520,27 @@ section img {
 }
 
 /*---------------- projects page ----------------*/
+.hero-content {
+  margin-left: 0%;
+}
+
+.hero-content p {
+  font-weight: 300;
+  line-height: 36px;
+  color: grey;
+}
+
+.hero-content h3 {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding-top: 50px;
+    width: 96%;
+    margin: 0 auto;
+  }
+}
 /*---------------- about page ----------------*/
 /*---------------- contact page ----------------*/
 /*---------------- project page ----------------*/
