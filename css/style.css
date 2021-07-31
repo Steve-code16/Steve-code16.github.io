@@ -528,11 +528,11 @@ section img {
 /*---------------- projects page ----------------*/
 .hero-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   margin-left: 0%;
 }
 
 .hero-content .row {
+  grid-template-columns: 2fr 1fr;
   grid-column: 1/2;
 }
 
@@ -554,5 +554,22 @@ section img {
   }
 }
 /*---------------- about page ----------------*/
+.container {
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about {
+  height: 500px;
+  /* margin-top: 120px; */
+}
+
+.image {
+  background: url(../imgs/) no-repeat center;
+  background-size: cover;
+}
 /*---------------- contact page ----------------*/
 /*---------------- project page ----------------*/

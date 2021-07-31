@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website || About</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    
+	<div class="wrapper">
+
+        <!-------------------- navbar starts here ---------------------->
+            <nav>
+                <!-- <div class="flx-container"> -->
+                    <span id="logo">
+                        <a href="index.html">SteveMolele</a>
+                    </span>
+        
+                    <ul id="menu">
+                        <li><a href="index.html">home<span>.</span></a></li>
+                        <li><a href="projects.html">projects<span>.</span></a></li>
+                        <li><a href="about.html">about me<span>.</span></a></li>
+                        <li><a href="contact.html">contact<span>.</span></a></li>
+                    </ul>
+                <!-- </div> -->
+    
+                <div id="toggle">
+                    <div class="span">menu</div>
+                </div>
+    
+            </nav>
+    
+            <div id="resize">
+                <div class="close-btn">close</div>
+    
+                <ul id="menu">
+                    <li><a href="index.html">home<span>.</span></a></li>
+                    <li><a href="projects.html">projects<span>.</span></a></li>
+                    <li><a href="about.html">about me<span>.</span></a></li>
+                    <li><a href="contact.html">contact<span>.</span></a></li>
+                </ul>
+            </div>
+        <!-------------------- navbar ends here ---------------------->
+    
+
+
+
+        <!-------------------- hero image starts here ---------------------->
+            <div class="container">
+                <div class="row">
+                    <div class="about image">
+                        
+                    </div>
+                </div>
+            </div>
+        <!-------------------- hero image ends here ---------------------->
+    
+    
+
+
+        <!-------------------- hero section starts here ---------------------->
+            <div class="container">
+                <br><br>
+                <div class="hero-content">
+                    <div class="about-me">
+                        <div>
+                            <h3>about me.</h3><br>
+
+                            <p>Living with passion is what I strictly adhere to. "Always do what you love" no matter how cheezy this sounds it holds absolutely true. That's why I enjoy designing (and web development). Not for the sole reason of "loving" to create but it helps me get rid of the world and escape into a different dimention of my own. I relish the process of starting from idea to a final product. The art of creating is something I am always fascinated by.
+                            </p>
+
+                            <p>I am a continous learner. Learning for me equates to exploring new ideas and growing as an individual. I just cannot imagine my life devoid of designing and art. I freely axpress my creativity and imagination by designing. And to give my passion of designing and art a platform I have an Instagram account called, <a href="#"><strong>@steveart-16</strong></a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+        <!-------------------- hero section ends here ---------------------->
+    
+    
+    
+    
+    
+        <!-------------------- skills starts here ---------------------->
+            <section class="container-fluid">
+                <br><br><br>
+    
+                <h6>Some of my skills</h6>
+    
+                <div class="vertical"></div>
+                <br>
+    
+                <div class="whitespace"></div>
+                <div class="whitespace"></div>
+    
+                <div class="skills">
+                    <div class="skill">
+                        <img src="imgs/html_icon.png" alt="">
+                        <div class="skill-name">HTML</div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="imgs/css_icon.png" alt="">
+                        <div class="skill-name">CSS</div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="imgs/javascript_icon.png" alt="">
+                        <div class="skill-name">JAVASCRIPT</div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="imgs/git_icon.png" alt="">
+                        <div class="skill-name">GIT</div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="imgs/bootstrap_icon.png" alt="">
+                        <div class="skill-name">BOOTSTRAP</div>
+                    </div>
+
+                    <div class="skill">
+                        <img src="imgs/figma_icon.png" alt="">
+                        <div class="skill-name">FIGMA</div>
+                    </div>
+                </div>
+    
+                <div class="whitespace"></div>
+            </section>
+        <!-------------------- skills ends here ---------------------->
+    
+    
+    
+    
+    
+        <!-------------------- footer starts here ---------------------->
+            <footer>
+                <div class="container">
+                    <br><br>
+    
+                    <div class="collab">
+                        <p>Got an interesting project? I can help you.</p>  
+                    </div>
+    
+                    <br>
+    
+                    <div class="hr">
+                        <div class="row"></div>
+                    </div>
+    
+                    <br><br>
+    
+                    <div class="info">
+                        <div id="personal">
+                            <p>connect with me</p>
+                            <h4><a href="#">ig @steveart-16</a></h4>
+    
+                            <br><br>
+                        </div>
+    
+                        <div id="media">
+                            <p>follow me</p>
+                                
+                            <ul>
+                                <li id="fb"><a href="#">fb</a></li>
+                                <li id="ig"><a href="#">ig</a></li>
+                                <li id="gh"><a href="#">gh</a></li>
+                                <li id="yt"><a href="#">yt</a></li>
+                            </ul>
+    
+                                <br><br>
+                        </div>
+    
+                        <div id="address">
+                            <p>say hello</p>
+                            <h4><a href="contact.html">stevemolele@yahoo.com</a></h4>
+    
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-------------------- footer ends here ---------------------->
+    
+    
+        <br><br><br><br>
+    
+    </div>
+    
+        <!-- scripts -->
+
+        <script>
+            const menuBtn = document.getElementById("toggle");
+            const closeBtn = document.getElementById("resize");
+
+            menuBtn.addEventListener('click', () => {
+                closeBtn.classList.add("active");
+            });
+
+            closeBtn.addEventListener('click', () => {
+                closeBtn.classList.remove("active");
+            });
+        </script>
+    
+</body>
+</html>
