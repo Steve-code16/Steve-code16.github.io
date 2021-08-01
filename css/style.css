@@ -557,7 +557,7 @@ section img {
 .container {
   width: 100%;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -568,7 +568,8 @@ section img {
 }
 
 .image {
-  background: url(../imgs/) no-repeat center;
+  background: url(../imgs/andrew-preble-hiTlXbs0-ZU-unsplash.jpg) no-repeat
+    center;
   background-size: cover;
 }
 /*---------------- contact page ----------------*/
