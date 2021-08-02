@@ -573,4 +573,84 @@ section img {
   background-size: cover;
 }
 /*---------------- contact page ----------------*/
+.contact-content {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+.contact-content p {
+  font-weight: 300;
+  line-height: 36px;
+  color: grey;
+}
+
+#contact-form {
+  margin: 5% 1.4%;
+}
+
+#contact-form ul {
+  list-style: none;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+#contact-form li {
+  padding: 10px;
+}
+
+#contact-form li:last-of-type {
+  border-bottom: none;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+  padding-left: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  resize: vertical;
+  background: transparent;
+  color: var(--light-clr);
+  font-weight: bolder;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.textArea {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+  /* margin-left: 50px; */
+  text-transform: uppercase;
+  padding: 20px 30px;
+  background: transparent;
+  color: #dfdfdf;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.3s ease-out;
+}
+
+.send:hover {
+  background: #dfdfdf;
+  color: #101010;
+}
+
+@media (max-width: 768px) {
+  #contact-form {
+    margin: 5% -8%;
+    width: 98%;
+  }
+}
+
 /*---------------- project page ----------------*/
