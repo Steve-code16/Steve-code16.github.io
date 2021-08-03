@@ -408,7 +408,7 @@ section img {
 }
 
 .info p {
-  color: grey;
+  color: #808080;
   font-weight: lighter;
   animation: fade-in-up 1s;
 }
@@ -491,6 +491,11 @@ section img {
 #media a:hover,
 #address a:hover {
   color: var(--acc-clr);
+}
+
+footer .copyright-text {
+  text-align: center;
+  color: #808080;
 }
 
 @media (max-width: 768px) {
