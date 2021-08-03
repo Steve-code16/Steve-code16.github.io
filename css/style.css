@@ -53,7 +53,7 @@ nav {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 5fr 5fr;
-  width: 90%;
+  width: 85%;
   height: 80px;
   background: var(--dark-clr);
   position: fixed;
@@ -77,8 +77,10 @@ nav #logo a:hover {
 }
 
 nav #menu {
-  right: 80px;
-  position: fixed;
+  /* right: 80px;
+  position: fixed; */
+  justify-self: end;
+  padding: 0;
   margin: 0;
 }
 
@@ -133,9 +135,10 @@ nav #menu li a:hover {
 #resize {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 2;
   background: var(--dark-clr);
-  width: 90%;
+  width: 95%;
   height: 100%;
   visibility: hidden;
   opacity: 0;
@@ -218,7 +221,7 @@ nav #menu li a:hover {
   margin: 0 auto; */
   height: 100vh;
   display: grid;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   overflow-x: hidden;
 }
@@ -555,7 +558,7 @@ section img {
 }
 /*---------------- about page ----------------*/
 .container {
-  width: 100%;
+  /* width: 100%; */
   padding-right: 25px;
   padding-left: 15px;
   margin-right: auto;
@@ -565,6 +568,10 @@ section img {
 .about {
   height: 500px;
   /* margin-top: 120px; */
+}
+
+.about-me p strong {
+  color: var(--acc-clr);
 }
 
 .image {
@@ -584,6 +591,15 @@ section img {
   color: grey;
 }
 
+.form-content {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+/* .form-content ul li {
+  padding: 0;
+} */
+
 #contact-form {
   margin: 5% 1.4%;
 }
@@ -592,6 +608,7 @@ section img {
   list-style: none;
   border-radius: 5px;
   margin-bottom: 40px;
+  padding: 0;
 }
 
 #contact-form li {
@@ -648,8 +665,13 @@ textarea:focus {
 
 @media (max-width: 768px) {
   #contact-form {
-    margin: 5% -8%;
+    margin: 5% 1%;
     width: 98%;
+  }
+
+  .contact-content,
+  .form-content {
+    display: unset;
   }
 }
 
