@@ -391,6 +391,15 @@ section img {
   animation: fade-in-up 1s;
 }
 
+.collab a {
+  color: var(--light-clr);
+  transition: all 0.3s ease-out;
+}
+
+.collab a:hover {
+  color: var(--acc-clr);
+}
+
 .hr {
   background: rgba(255, 255, 255, 0.2);
   height: 1px;
@@ -398,7 +407,7 @@ section img {
 
 .info {
   display: grid;
-  grid-template-columns: repeat(3, 4fr);
+  grid-template-columns: 2fr 6fr 4fr;
 }
 
 .info h4 {
@@ -480,6 +489,7 @@ section img {
 
 #media ul li {
   display: inline-block;
+  font-size: 0.65rem;
 }
 
 #address a {
