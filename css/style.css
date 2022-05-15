@@ -353,7 +353,7 @@ section h6 {
 
 section .skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
   padding: 20px;
@@ -494,7 +494,7 @@ section img {
 
 #media ul li {
   display: inline-block;
-  font-size: 0.65rem;
+  font-size: 1rem;
 }
 
 #address a {
@@ -581,6 +581,7 @@ footer .copyright-text {
   align-items: center;
   column-gap: 0.75rem;
   margin-bottom: 2rem;
+  animation: fade-in 5s;
 }
 
 .project-item {
@@ -726,8 +727,7 @@ footer .copyright-text {
 .details-info li span {
   font-weight: normal;
 }
-
-.details-info li a {
+row .details-info li a {
   text-transform: lowercase;
   color: var(--acc-clr);
 }
