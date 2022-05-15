@@ -710,7 +710,6 @@ footer .copyright-text {
 }
 
 .details-info {
-  color: var(--acc-clr);
   padding: 0;
 }
 
@@ -729,6 +728,7 @@ footer .copyright-text {
   font-weight: normal;
 }
 .details-info li a {
+  color: var(--acc-clr);
   text-transform: lowercase;
 }
 
